@@ -47,7 +47,7 @@
                 <div id="right_nav">
                     <ul>
                         <li ng-repeat="item in menu"><a class="current" href="home.html" title="">{{item}}</a></li>
-                        <li><input type="text" ng-model="newItem" class="short"/><div class="read_more inline-button" ng-click="addItem()">Add</div></li>
+                        <li><input type="text" ng-model="newItem" class="short"/><div class="read_more inline-button" ng-click="addItem()" ng-show="newItem.length>0">Add</div></li>
                     </ul>
                 </div>
 
