@@ -4,9 +4,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Greefies Css Template</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <script type="text/javascript" src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/application.js"></script>
+        <script type="text/javascript" src="scripts/controller.js"></script>
     </head>
 
-    <body>
+    <body ng-app="introApp" ng-controller="MainCtrl">
         <div id="main_container">
             <div id="header">
                 <div id="logo"><a href="home.html"><img src="css/images/logo.gif" alt="" title="" border="0"></a></div>
@@ -43,11 +46,7 @@
 
                 <div id="right_nav">
                     <ul>
-                        <li><a href="home.html" title="">Lorem ipsum dolor sit amet cons</a></li>
-                        <li><a href="services.html" title="">Lorem ipsum dolor sit amet cons</a></li>
-                        <li><a class="current" href="#" title="">Lorem ipsum dolor sit amet cons</a></li>
-                        <li><a href="#" title="">Lorem ipsum dolor sit amet cons</a></li>
-                        <li><a href="contact.html" title="">Lorem ipsum dolor sit amet cons</a></li>
+                        <li ng-repeat="item in menu"><a class="current" href="home.html" title="">{{item}}</a></li>
                     </ul>
                 </div>
 
