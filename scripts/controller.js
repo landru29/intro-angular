@@ -10,4 +10,11 @@ angular.module('introApp')
             	'Ola'
             ];
 
+            $scope.newItem='';
+
+            $scope.addItem = function() {
+            	$scope.menu.push($scope.newItem);
+            	$scope.newItem='';
+            }
+
         });

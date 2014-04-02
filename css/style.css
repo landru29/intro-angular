@@ -391,5 +391,12 @@ text-decoration:underline;
 color: #fff;
 }
 
+.inline-button {
+	cursor:pointer;
+	display:inline-block;
+}
 
+input.short {
+	width:100px;
+}
 
